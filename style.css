@@ -1,0 +1,197 @@
+html body{
+    height: 100% ;
+    width: 100%;
+    margin: 0vw 0vw;
+    padding: 0%;
+}
+
+.main {
+height: 100%;
+width: 100%;
+position: relative;
+}
+
+.nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: solid #dadadd;
+    color: crimson;
+}
+
+.nav-part2
+{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+
+}
+
+.nav h2{
+    font-size: 2vw;
+   font-weight: 700 ;
+
+}
+
+.nav h4{
+    font-size: 1vw;
+}
+
+.nav i{
+    font-size: 1.8vw;
+    font-weight: 800;
+    display: none;
+}
+
+div.content1 {
+    display: flex;
+    height: calc(100vh - 10.36vh); /* or height: 100vh, 100vw; */
+    
+   
+}
+
+.left{
+    
+    width : 55%;
+  background-color: black; 
+    padding: 2vh 4vw;
+}
+
+.left h1{
+    font-size: 5vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.left span{
+    color: crimson;
+    text-transform: uppercase;
+}
+
+.left h3{
+    font-size: 2vw;
+    color: #666;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
+
+/* button with animation */
+
+    button {
+    font-size: 1.5vw;
+    padding: 1.3vw 2.5vw;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius:  5px;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  .bubble-btn:hover {
+    animation: bubble 0.4s ease-out;
+  }
+  
+  @keyframes bubble {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+.right{
+    background-color: black;
+    width: 45%;
+   padding: 4vw 20vh;
+    align-items: center;
+} 
+
+.right img{
+    height: 100%;
+}
+
+
+/* location page */
+.dabba{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-style: groove white;
+    color: crimson;
+}
+.locationpage {
+    height: 100% ;
+    font-size: 1.5vw;
+    padding: 1.3vw 2.5vw;
+    font-weight: 500;
+    
+    background-color: rgb(255, 255, 255);
+    
+    border: none;
+    border-radius:  5px;
+}
+
+/* CONTACT PAGE */
+
+/* location page */
+.dabba2{
+    height: 300px;
+    display: flex;
+   justify-content: center;
+    text-align: center;
+    align-items: center;
+   border-style: groove white;
+    color: chartreuse;
+}
+.CONTACTUS {
+    height: 100% ;
+    font-size: 1.5vw;
+    padding: 1.3vw 2.5vw;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255); 
+    border: none;
+    border-radius:  5px;
+}
+
+
+
+@media (max-width:600px){
+.nav{
+    background-color: aqua;
+    color: black;
+    padding:  0 5vw;
+    height: 60px;
+}
+
+.nav h2{
+    font-size: 4vw;
+}
+
+.nav h4{
+    font-size: ;
+    display: none;
+}
+
+.nav i {
+    display: block;
+    font-size: 6vw;
+}
+
+
+
+
+
+}
