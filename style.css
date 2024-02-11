@@ -143,7 +143,8 @@ div.content1 {
     font-size: 1.5vw;
     padding: 1.3vw 2.5vw;
     font-weight: 500;
-    
+    align-items: center;
+    text-align: center;
     background-color: rgb(255, 255, 255);
     
     border: none;
