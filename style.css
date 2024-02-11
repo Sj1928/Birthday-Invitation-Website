@@ -60,6 +60,8 @@ div.content1 {
 }
 
 .left h1{
+    font-size: 10vw;
+    font-family: poppins ;
     font-size: 5vw;
     text-transform: uppercase;
     color: white;
@@ -206,11 +208,6 @@ div.content1 {
     padding: 0 10vw;
    width: auto;
     height: 60%;
-}
-
-.left h1{
-    font-size: 10vw;
-    font-family: poppins;
 }
 
 .left h3{
