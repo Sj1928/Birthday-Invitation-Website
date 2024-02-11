@@ -71,8 +71,11 @@ div.content1 {
 }
 
 .left h3{
+    font-weight: 800;
+    font-family: 'Honk', system-ui;
+    font-family: 'Zeyada', cursive;
     font-size: 2vw;
-    color: #666;
+    color: #ffffff;
     margin-top: 3vw;
     margin-bottom: 1vw;
 }
@@ -80,6 +83,8 @@ div.content1 {
 /* button with animation */
 
     button {
+    font-family: poppins;
+    font-weight: 800;
     font-size: 1.5vw;
     padding: 1.3vw 2.5vw;
     font-weight: 500;
@@ -209,18 +214,12 @@ div.content1 {
 }
 
 .left h3{
-    font-weight: 800;
     font-size: 5vw;
-    font-family: Sexy shout;
     padding-bottom: 6vw;
 
-    font-family: 'Honk', system-ui;
-    font-family: 'Zeyada', cursive;
 }
 
 button{
-    font-family: poppins;
-    font-weight: 800;
     font-size: 6vw;
     padding: 3vw 6vw;
     border-radius: 10px;
