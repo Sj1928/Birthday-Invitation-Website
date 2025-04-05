@@ -1,14 +1,16 @@
-html body{
-    height: 100% ;
+html, body {
+    height: 100%;
     width: 100%;
-    margin: 0vw 0vw;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set global background to black */
 }
 
 .main {
-height: 100%;
-width: 100%;
-position: relative;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: black; /* Ensures .main has a black background */
 }
 
 .nav {
@@ -19,27 +21,25 @@ position: relative;
     padding: 0 4vw;
     border-bottom: solid #dadadd;
     color: crimson;
+    background-color: black; /* Ensure nav background is black */
 }
 
-.nav-part2
-{
+.nav-part2 {
     display: flex;
     gap: 4vw;
     align-items: center;
-
 }
 
-.nav h2{
+.nav h2 {
     font-size: 2vw;
-   font-weight: 700 ;
-
+    font-weight: 700;
 }
 
-.nav h4{
+.nav h4 {
     font-size: 1vw;
 }
 
-.nav i{
+.nav i {
     font-size: 1.8vw;
     font-weight: 800;
     display: none;
@@ -47,30 +47,28 @@ position: relative;
 
 div.content1 {
     display: flex;
-    height: calc(100vh - 10.36vh); /* or height: 100vh, 100vw; */
-    
-   
+    height: calc(100vh - 10.36vh);
+    background-color: black; /* Ensure content1 has a black background */
 }
 
-.left{
-    
-    width : 55%;
-  background-color: black; 
+.left {
+    width: 55%;
+    background-color: black; /* Ensures left section is black */
     padding: 2vh 4vw;
 }
 
-.left h1{
+.left h1 {
     font-size: 5vw;
     text-transform: uppercase;
     color: white;
 }
 
-.left span{
+.left span {
     color: crimson;
     text-transform: uppercase;
 }
 
-.left h3{
+.left h3 {
     font-weight: 800;
     font-family: 'Honk', system-ui;
     font-family: 'Zeyada', cursive;
@@ -80,9 +78,7 @@ div.content1 {
     margin-bottom: 1vw;
 }
 
-/* button with animation */
-
-    button {
+button {
     font-family: poppins;
     font-weight: 800;
     font-size: 1.5vw;
@@ -93,151 +89,139 @@ div.content1 {
     background-color: crimson;
     color: rgb(255, 255, 255);
     border: none;
-    border-radius:  5px;
+    border-radius: 5px;
     position: relative;
     transition: transform 0.3s;
-  }
+}
 
-  .bubble-btn:hover {
+.bubble-btn:hover {
     animation: bubble 0.4s ease-out;
-  }
-  
-  @keyframes bubble {
+}
+
+@keyframes bubble {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
     50% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
+}
 
-
-
-.right{
+.right {
     background-color: black;
     width: 45%;
-   padding: 4vw 20vh;
+    padding: 4vw 20vh;
     align-items: center;
-} 
+}
 
-.right img{
+.right img {
     height: 100%;
     width: auto;
 }
 
-
-/* location page */
-.dabba{
+.dabba {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-   border-style: groove white;
+    border-style: groove white;
     color: crimson;
 }
+
 .locationpage {
-    height: 100% ;
+    height: 100%;
     font-size: 1.5vw;
     padding: 1.3vw 2.5vw;
     font-weight: 500;
     align-items: center;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    
     border: none;
-    border-radius:  5px;
+    border-radius: 5px;
 }
 
-/* CONTACT PAGE */
-
-/* location page */
-.dabba2{
+.dabba2 {
     height: 300px;
     display: flex;
-   justify-content: center;
+    justify-content: center;
     text-align: center;
     align-items: center;
-   border-style: groove white;
+    border-style: groove white;
     color: chartreuse;
 }
+
 .CONTACTUS {
-    height: 100% ;
+    height: 100%;
     font-size: 1.5vw;
     padding: 1.3vw 2.5vw;
     font-weight: 500;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
     border: none;
-    border-radius:  5px;
+    border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+    .nav {
+        background-color: rgb(0, 0, 0);
+        color: crimson;
+        padding: 0 10vw;
+        height: 60px;
+        border-bottom: dashed whitesmoke;
+    }
 
+    .nav h2 {
+        font-size: 4vw;
+    }
 
-@media (max-width:600px){
-.nav{
-    background-color: rgb(0, 0, 0);
-    color: crimson;
-    padding:  0 10vw;
-    height: 60px;
-    border-bottom: dashed whitesmoke;
-}
+    .nav h4 {
+        font-size: 2vw;
+        display: none;
+    }
 
-.nav h2{
-    font-size: 4vw;
-}
+    .nav i {
+        display: block;
+        font-size: 6vw;
+    }
 
-.nav h4{
-    font-size: 2vw ;
-    display: none;
-}
+    .content1 {
+        flex-direction: column;
+        background-color: black; /* Ensure content1 is black in mobile view */
+    }
 
-.nav i {
-    display: block;
-    font-size: 6vw;
-}
+    .left {
+        padding: 0 10vw;
+        width: auto;
+        height: 60%;
+    }
 
-.content1{
-    flex-direction: column;
-    
-}
+    .left h1 {
+        font-size: 10vw;
+        font-family: poppins;
+    }
 
-.left{
-    padding: 0 10vw;
-   width: auto;
-    height: 60%;
-}
+    .left h3 {
+        font-size: 5vw;
+        padding-bottom: 6vw;
+    }
 
-.left h1{
-    font-size: 10vw;
-    font-family: poppins;
-}
+    button {
+        font-size: 6vw;
+        padding: 3vw 6vw;
+        border-radius: 10px;
+    }
 
-.left h3{
-    font-size: 5vw;
-    padding-bottom: 6vw;
+    .right {
+        width: 100%;
+        height: 40%;
+        align-items: center;
+        justify-items: center;
+        padding: 0%;
+    }
 
-}
-
-button{
-    font-size: 6vw;
-    padding: 3vw 6vw;
-    border-radius: 10px;
-
-}
-
-.right{
-    width: 100%;
-    height: 40%;
-    align-items: center;
-    justify-items: center;
-    padding: 0%;
-}
-
-i{
-    color: crimson;
-}
-
-
+    i {
+        color: crimson;
+    }
 }
